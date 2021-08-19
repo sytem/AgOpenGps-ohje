@@ -27,5 +27,29 @@ Komentteja ja ehdotuksia tähän versioon otetaan mielellään vastaan, etunimi 
 	* Tukiaseman paikan määritys
 	* Rtk2go oikeat parametrit, lähettävät viestityypit
 
-* [Komponentit traktorissa]
+* [Komponentit traktorissa](traktori.md)
+	* Gps:n firmware-asetukset
+	* Windows-asetukset
+	
+	* Piirilevyn tilausprosessi
+	* Komponenttien hankinta
+	
+	* Anturien sijoitus
+	* Akselianturin vivusto
+	* Gps-antennin paikka
+	* Rattirulla
+	* Liittimet
+	* Asennusjärjestys
+	* Arduinon ohjelmointi
+	* Testausvaiheet
+
+	* Traktorin omat anturit, canbus, hydrauliikka
+
+* [Ohjelmisto ja käyttö](ohjelmisto.md)
+	* Ntrip asetukset
+	* Traktorin mitat
+	* Työkoneen asetukset
+	* Ohjauksen parametrit
+	* Status-näkymä
+
 
