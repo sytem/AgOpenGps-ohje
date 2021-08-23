@@ -51,17 +51,17 @@ Eli: a) sinulla on lupa lähettää dataa, käytännössä tukiaseman tarkkaa pa
 
 Datan lähettäminen palveluun vaatii rekisteröitymisen http://www.rtk2go.com/new-reservation/
 
-!kuva1(kuvat/gps/rekisterointi1.png)
+![kuva1](kuvat/gps/rekisterointi1.png)
 
 Lomake vaatii nimesi, toimivan sähköpostiosoitteen (ei julkaista missään) sekä MountPT Name:n joka on julkisesti tukiasemasi yksilöivä tieto. Kannattaa huomioida että tämä julkaistaan yhdessä senttitarkan sijainnin kanssa, joten esim oma nimesi ei välttämättä ole järkevin valinta jos antenni on talosi katolla. Tilan nimi tai muu vastaava on oikein toimiva, 4-20 kirjainta tai numeroa ilman välilyöntejä, viiva ja alaviiva ovat sallittuja erikoismerkkejä. Nimessä pienet ja isot kirjaimet ovat eri asia.
 
-!kuva2(kuvat/gps/rekisterointi2.png)
+![kuva2](kuvat/gps/rekisterointi2.png)
 
 Salasanakentän voi jättää tyhjäksi tässä kohtaa, jolloin palvelu lähettää sinulle tarvittavan satunnais-salasanan. Tätä ei tarvitse syöttää kuin kerran tukiaseman asetuksiin, joten arvottu satunnaismerkkijono on hyvä.
 
 Message Format ja ntrip protocol voi jättää oletusasetuksiinsa, samoin kuin optional settingsin valintaboksit.
 
-!kuva3(kuvat/gps/rekisterointi3.png)
+![kuva3](kuvat/gps/rekisterointi3.png)
 
 Kaupunki ja maakoodi (FIN) ovat näkyvillä tukiasemien listauksessa.
 
