@@ -19,6 +19,9 @@ Dokumentaatio on tuotettu pääasiassa ohjelmiston versiolle 5 (syksy 2021), mut
 	* järjestelmän oma dokumentaatio
 	* käyttäjäryhmät
 	* komponenttien hankintapaikat
+
+* [Osaluettelo](osat.md)	
+
 * [GPS-tukiasema ja paikannus](RTK-GPS.md)
 	* RTK-paikannuksen perusteet
 	* Antennin asennuspaikka
@@ -28,6 +31,8 @@ Dokumentaatio on tuotettu pääasiassa ohjelmiston versiolle 5 (syksy 2021), mut
 	* Gps:n asetukset
 	* Tukiaseman paikan määritys
 	* Rtk2go oikeat parametrit, lähettävät viestityypit
+
+
 
 * [Komponentit traktorissa](traktori.md)
 	* Gps:n firmware-asetukset
