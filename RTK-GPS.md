@@ -21,6 +21,9 @@ gps-linkki suomi-wikipedia
 kaupalliset korjauss-signaalit
 kiihtyvyysanturit
 
+https://www.use-snip.com/kb/knowledge-base/question-what-is-an-ntrip/
+
+
 
 ## Antennin asennuspaikka
 
@@ -168,4 +171,40 @@ Tämä ei kuitenkaan ole vielä normaaliin RTK-paikannukseen pitkällä tähtäi
 
 ## Tukiaseman paikan määritys
 
+Jotta RTK-paikannus toimii mahdollisimman hyvin, on tukiaseman käsitys omasta paikastaan oltava mahdollisimman tarkka. Tämän varmistamiseksi on olemassa erilaisia menetelmiä, joilla on erilaisia tarkkuuksia.
+
+Tässä kohtaa on hyvä huomata että eri karttapalvelut eivät ole välttämättä riittävän tarkkoja tietyn pisteen määrittämiseen edes metrin tarkkuudella, vaan kaikissa näissä on virhettä jonka suuruus ja suunta vaihtelee. Eli välttämättä tarkkakaan paikka ei osu millään kartalla juuri sentilleen oikean näköiseen kohtaan, kun kartta-aineisto ei ole tarpeeksi tarkkaa.
+
+Ensimmäinen, ja samalla epätarkin määritysmahdollisuun on antaa tukiaseman keskiarvottaa omaa paikkaansa jonkin aikaa, ja sitten kopioida se sijainti talteen. Tämä antaa riittävän tarkkuuden traktorin suoraan kulkemiseen tiettynä päivänä, mutta jos halutaan toistaa esim samoja uria myöden ajo myöhemmin, tämä ei vielä välttämättä siihen riitä.
+
+Parempi menetelmä on antaa tukiaseman tallentaa logia muutaman vuorokauden, ja sitten lähettää tämä ulkoiseen palveluun analysoitavaksi
+
+Tallennus kytketään päälle tukiaseman webbihallinnassa kohdasta File Service, ja logs-välilehdellä näkyy datan tallentuminen. Muutaman päivän keräämisen jälkeen logi ladataan koneelle ja siirretään analysoitavaksi.
+
+todo
+
+https://rtklibexplorer.wordpress.com/2017/11/23/ppp-solutions-with-the-swiftnav-piksi-multi/
+
+Rinex-formaatti
+
+viive mittauksen lähettämisessä parantaa tarkkuutta kun dataa on enemmän saatavilla
+
+https://webapp.geod.nrcan.gc.ca/geod/tools-outils/ppp.php?locale=en
+
+
+
+
 ## Rtk2go oikeat parametrit, lähettävät viestityypit
+
+Kun paikka on tarpeeksi tarkasti syötetty tukiaseman tietoihin, voidaan käynnistää lähetys rtk2go-palveluun. Tämä tapahtuu syöttämällä Ntrip-serviceen tarvittavat tiedot, eli siis
+
+* Caster address: rtk2go.com
+* Caster port: 2101
+* Caster password: <rekisteröitymisen yhteydessä annettu>
+* Mount name: <rekisteröidessä valitsemasi>
+
+Kohdassa Rtcm messages valitaan mitä tietoja ja kuinka usein palveluun lähetetään. Viestityypit löytyvät esim täältä: https://www.use-snip.com/kb/knowledge-base/an-rtcm-message-cheat-sheet/
+
+luku suluissa tyypin jälkeen kertoo kuinka monen vastaanotetun paketin välein tietty viesti lähetetään eteenpäin. Jos siis gps antaa uuden datan 100ms välein eli 10Hz, luku yksi lähettää sen 10 kertaa sekunnissa, luku 10 kerran sekunnissa ja 100 kerran kymmessä sekunnissa.
+
+Perustilanteessa korjausdata halutaan lähettää joko kerta, ja tukiaseman tiedot voidaan lähettää esim kerran 10 sekunnissa koska ne eivät muutu
