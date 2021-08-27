@@ -65,6 +65,12 @@ Poe-laitteiden kanssa on syytä tarkistaa että virransyöttö on riittävä, k�
 
 Saatavilla on myös edullisempia "passive poe"-palikoita ja kaapeleita jotka eivät ole IEEE 802.3af tai muunkaan standardin mukaisia, vaan pelkästään passiivisia kytkentöjä niin että reittittimen päähän tulee laitteen alkuperäinen virtalähde. Näiden käyttö Raspberryn ja 5v syöttöjännitteen kanssa ei ole järkevää, ohuen ethernet-kaapelin häviöt ovat liian suuret ilman korkeamman jännitteen käyttämistä.
 
+## Ardusimple GPS firmispäivitys
+
+GPS-vastaanottimissa on sisäinen ohjelmisto joka on syytä päivittää, todennäköisesti tehtaaalta saapuessa se on melko tuore mutta tästä ei voi olla varma. Päivitys tapahtuu Ublox:in windows-softalla
+
+TODO
+
 ## rtk2go
 
 http://rtk2go.com/ on vapaasti käytetävissä oleva internetpalvelu joka tarjoaa NTRIP-korjausdatan välityspalvelun. Palvelu perustu SNIP-ohjelmistoon jonka voisi asentaa myös omalle tietokoneelle, mutta tässä käyttötapauksessa jonkun muun ylläpitämä palvelu on kovasti helppo ratkaisu.
@@ -101,10 +107,64 @@ Mistä kuulit RTK2go:sta voi hyvin täyttää "Referred by Colleague" jos luet a
 Lähettämisen jälkeen sähköpostistasi pitäisi löytyä vastausviesti, johon pitää vastata jotta rekisteröinti etenee. Tämän jälkeen ihminen käsittelee ilmoituksesi ja saat sen jälkeen erikseen kuittausviestin jossa on tukiaseman yhdistämiseen tarvittavat tiedot.
 
 
+## wifi tukiasemalle
+
+Jos lankaverkon veto tukiaseman paikkaan ei ole helppo vaihtoehto, RaspberryPi:ssä on myös wifi. Tämän saa käyttöön kirjautumalla komentoriville, esim putty-ohjelmalla tai jos käytössä mac/linux, suoraan ssh-komennolla.
+
+ssg basegnss@basegnss.local
+
+salasana basegnss!
+
+komentorivi "basegnss@basegnss:~ $" aukeaa
+
+Komento "sudo nano /etc/wpa_supplicant/wpa_supplicant.conf" avaa wifi-asetukset editoriin
+
+täytä kohtaan ssid="" oma verkon nimesi, psk: "" salasanan
+
+ctrl+x lopettaa editorin, kysyy tallennetaanko johon "y" vastaamalla kirjoitetaan muutokset
+
+"sudo reboot" käynnistää tukiasman uudestaan ja liittyy wifiin jos asetukset on oikein
+
 
 
 
 ## Gps:n asetukset
+
+Jotta tukiasema toimii, tarvii se muutamia säätöjä. GPS:n päivitysvaiheessa asennettu konfiguraatio ei välttämättä ole oikea, ja se tarvitsee korvata tukiaseman omalla konffilla. Lisäksi pitää tarkistaa että tukiasemasofta koittaa löytää GPS:n oikeasta portista
+
+Kirjaudutaan ensin selaimella osoitteeseen http://basegnss.local , salasana admin. Jos etusivulla näkyy suoraan paikka kartalla ja vihreitä ja keltaisia palkkeja satelliittien merkiksi, kaikki on mallikkaasti valmiiksi. Jos ei, niin tarkista settings-välilehdeltä, "main service" ja "options", mitä kohdassa "Com port" lukee. RaspberryPI:n kanssa oikea portti on "ttyACM0". Tämän jälkeen save, ja käytä Main Servicen liukusäädin hetki asennossa off.
+
+Jos vieläkään ei paikkatieto lähde juoksemaan, sammuta "main service" selaimessa ja kirjaudu tukiasemaan ssh:lla kuten ylläolevassa wifi-ohjeessa.
+
+aja komentorivillä
+
+"basegnss@basegnss:~ $ ./"rtkbase/tools/set_zed-f9p.sh /dev/ttyACM0 115200 rtkbase/receiver_cfg/U-Blox_ZED-F9P_rtkbase.cfg"
+
+Tästä pitäisi tulla pitkä tuloste:
+
+
+U-Blox ZED-F9P detected
+Resetting ZED-F9P to default settings
+UBX-ACK-ACK:
+  ACK to Class x06 (CFG) ID x09 (CFG)
+
+  ... ...
+
+  UBX-RXM-SFRBX:
+   gnssId 2 svId  36 reserved1 1 freqId 0 numWords 9
+    chn 49 version 2 reserved2 16
+      GAL: long message? len 9
+      GAL: even 0 page_type 0 word_type 4
+      Ephemeris 4: IODnav 50 SVID 36 Cic 65531 Cis 4
+         t0c 8180 af0 2143116590 af1 2096782 af2 0
+
+  Done
+  basegnss@basegnss:~ $   
+
+
+Tämän jälkeen taas selaimessa "main-service" käyntiin ja nyt pitäisi paikan löytyä. Tässä kohtaa käyttöliittymästä tulee mukavampi kun muutaman minuutin jälkeen klikkaa kartan yläpuolella olemista koordinaateista oikeassa reunassa olevaa leikepöytänappia, ja käy tästä kopiodun paikkarimpsun liittämässä main servicen asetuksiin, Ranskan rannikon sijaan.
+
+Tämä ei kuitenkaan ole vielä normaaliin RTK-paikannukseen pitkällä tähtäimellä riittävän tarkka tukiaseman sijainti, vaan seuraavaksi se määritellään tarkemmin.
 
 ## Tukiaseman paikan määritys
 
