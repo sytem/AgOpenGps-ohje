@@ -203,8 +203,32 @@ Kun paikka on tarpeeksi tarkasti syötetty tukiaseman tietoihin, voidaan käynni
 * Caster password: <rekisteröitymisen yhteydessä annettu>
 * Mount name: <rekisteröidessä valitsemasi>
 
-Kohdassa Rtcm messages valitaan mitä tietoja ja kuinka usein palveluun lähetetään. Viestityypit löytyvät esim täältä: https://www.use-snip.com/kb/knowledge-base/an-rtcm-message-cheat-sheet/
+Kohdassa Rtcm messages valitaan mitä tietoja ja kuinka usein palveluun lähetetään. Viestityypit löytyvät esim täältä: https://www.use-snip.com/kb/knowledge-base/an-rtcm-message-cheat-sheet/ ja tarkemmin https://www.use-snip.com/kb/knowledge-base/rtcm-3-message-list/
 
 luku suluissa tyypin jälkeen kertoo kuinka monen vastaanotetun paketin välein tietty viesti lähetetään eteenpäin. Jos siis gps antaa uuden datan 100ms välein eli 10Hz, luku yksi lähettää sen 10 kertaa sekunnissa, luku 10 kerran sekunnissa ja 100 kerran kymmessä sekunnissa.
 
-Perustilanteessa korjausdata halutaan lähettää joko kerta, ja tukiaseman tiedot voidaan lähettää esim kerran 10 sekunnissa koska ne eivät muutu
+Perustilanteessa korjausdata halutaan lähettää joko kerta, ja tukiaseman tiedot voidaan lähettää harvemmin koska ne eivät muutu.
+
+Agopen-gps:n käyttöön Ardusimplen GPS:llä seuraavat viestit on todettu toimivaksi: 1005(10),1077,1087,1097,1230(3)
+
+Eli siis, lähetetään 10 kertaa sekunnissa
+* 1077 gps data
+* 1087 Glonass data
+* 1097 Galileo data
+
+joka kolmannella kerralla lähetetään
+
+* 1230 "GLONASS L1 and L2 Code-Phase Biases"
+
+kerran sekunnissa lähetetään
+
+* 1005 "Stationary RTK Reference Station ARP", Antennin paikkatieto
+
+
+## tukiaseman varmuuskopioiti
+
+RaspberryPi:n massamuistinaan käyttämä SD-muistikortti ei ole tunnetusti maaiman vakain ja pitkäikäisin tallennusmedia jatkuvasti kirjoitettuna. On siis syytä pitää varakortti jossa on asetukset tallessa, käytännössä käytön aikana kortin sisältö ei päivity joten sellaisen voi kloonata suoraan.
+
+Yksi vaihtoehto olisi myös tehdä kortista kirjoitussuojattu, ja olla tallentamatta mitään muutoksia suoraan.
+
+TODO
