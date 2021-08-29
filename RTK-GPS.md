@@ -14,14 +14,13 @@ Kukin paikannusjärjestelmä on perusperiaatteltaan kovin samantyyppinen, Maata 
 Diffrentiaali-GPS, DGPS perustuu tunnetussa sijainnissa olevan tukiaseman vastaanottamaan paikkatietoon, ja reaaliaajassa tehtävänään vertailuun lasketun ja tunnetun sijainnin erotukseen. Tämä erotus lähetettään liikkuville vastaanottimille muodossa "sain juuri nyt sijaintini eroksi 6m lähteen ja 3m etelään, korjaa omaa gnss-signaalista laskemaasi paikkaa vastaavasti. Eli siis voidaan olettaa virheen olevan samansuuntainen ja -suuruinen myös liikkuvan vastaanottimen kohdalla
 
 
-todo:
-virhelähteet
-rtk
-gps-linkki suomi-wikipedia
-kaupalliset korjauss-signaalit
-kiihtyvyysanturit
-
-https://www.use-snip.com/kb/knowledge-base/question-what-is-an-ntrip/
+### todo:
+* virhelähteet
+* rtk
+* gps-linkki suomi-wikipedia
+* kaupalliset korjauss-signaalit
+* kiihtyvyysanturit
+* https://www.use-snip.com/kb/knowledge-base/question-what-is-an-ntrip/
 
 
 
@@ -114,19 +113,24 @@ Lähettämisen jälkeen sähköpostistasi pitäisi löytyä vastausviesti, johon
 
 Jos lankaverkon veto tukiaseman paikkaan ei ole helppo vaihtoehto, RaspberryPi:ssä on myös wifi. Tämän saa käyttöön kirjautumalla komentoriville, esim putty-ohjelmalla tai jos käytössä mac/linux, suoraan ssh-komennolla.
 
-ssg basegnss@basegnss.local
+> ssg basegnss@basegnss.local
 
 salasana basegnss!
 
 komentorivi "basegnss@basegnss:~ $" aukeaa
 
-Komento "sudo nano /etc/wpa_supplicant/wpa_supplicant.conf" avaa wifi-asetukset editoriin
+Komento:
+ > sudo nano /etc/wpa_supplicant/wpa_supplicant.conf"
+
+avaa wifi-asetukset editoriin
 
 täytä kohtaan ssid="" oma verkon nimesi, psk: "" salasanan
 
 ctrl+x lopettaa editorin, kysyy tallennetaanko johon "y" vastaamalla kirjoitetaan muutokset
 
-"sudo reboot" käynnistää tukiasman uudestaan ja liittyy wifiin jos asetukset on oikein
+> sudo reboot
+
+käynnistää tukiasman uudestaan ja liittyy wifiin jos asetukset on oikein
 
 
 
@@ -141,28 +145,28 @@ Jos vieläkään ei paikkatieto lähde juoksemaan, sammuta "main service" selaim
 
 aja komentorivillä
 
-"basegnss@basegnss:~ $ ./"rtkbase/tools/set_zed-f9p.sh /dev/ttyACM0 115200 rtkbase/receiver_cfg/U-Blox_ZED-F9P_rtkbase.cfg"
+> basegnss@basegnss:~ $ ./"rtkbase/tools/set_zed-f9p.sh /dev/ttyACM0 115200 rtkbase/receiver_cfg/U-Blox_ZED-F9P_rtkbase.cfg
 
 Tästä pitäisi tulla pitkä tuloste:
 
 
-U-Blox ZED-F9P detected
-Resetting ZED-F9P to default settings
-UBX-ACK-ACK:
-  ACK to Class x06 (CFG) ID x09 (CFG)
+>U-Blox ZED-F9P detected
+>Resetting ZED-F9P to default settings
+>UBX-ACK-ACK:
+>  ACK to Class x06 (CFG) ID x09 (CFG)
 
   ... ...
 
-  UBX-RXM-SFRBX:
-   gnssId 2 svId  36 reserved1 1 freqId 0 numWords 9
-    chn 49 version 2 reserved2 16
-      GAL: long message? len 9
-      GAL: even 0 page_type 0 word_type 4
-      Ephemeris 4: IODnav 50 SVID 36 Cic 65531 Cis 4
-         t0c 8180 af0 2143116590 af1 2096782 af2 0
+>  UBX-RXM-SFRBX:
+>   gnssId 2 svId  36 reserved1 1 freqId 0 numWords 9
+>    chn 49 version 2 reserved2 16
+>      GAL: long message? len 9
+>      GAL: even 0 page_type 0 word_type 4
+>      Ephemeris 4: IODnav 50 SVID 36 Cic 65531 Cis 4
+>         t0c 8180 af0 2143116590 af1 2096782 af2 0
 
-  Done
-  basegnss@basegnss:~ $   
+>  Done
+>  basegnss@basegnss:~ $   
 
 
 Tämän jälkeen taas selaimessa "main-service" käyntiin ja nyt pitäisi paikan löytyä. Tässä kohtaa käyttöliittymästä tulee mukavampi kun muutaman minuutin jälkeen klikkaa kartan yläpuolella olemista koordinaateista oikeassa reunassa olevaa leikepöytänappia, ja käy tästä kopiodun paikkarimpsun liittämässä main servicen asetuksiin, Ranskan rannikon sijaan.

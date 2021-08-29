@@ -16,11 +16,11 @@ Aktivisin suomenkielinen ryhmä aiheeseen liittyen löytyy Facebookista https://
 
 TODO: lisää muiden maiden ryhmiä, saksa yms
 
-Rakentamiseen apuja voi etsiä [Hacklab-yhteisöstä](https://hacklab.fi/) mikäli sellainen omalla paikkakunnalla tai lähistöllä sijaitsee. 
+Rakentamiseen apuja voi etsiä [Hacklab-yhteisöstä](https://hacklab.fi/) mikäli sellainen omalla paikkakunnalla tai lähistöllä sijaitsee.
 
 ## komponenttien hankintapaikat
 
-Järjestelmään tarvitaan hyvä joukko erilaisia komponenttejä ja näiden hankinta vaatii ostoksia eri paikoissa, mekaniikaan perusosia lukuunottamatta lähinnä verkkokauppoja.
+Järjestelmään tarvitaan hyvä joukko erilaisia [komponenttejä](osat.md) ja näiden hankinta vaatii ostoksia eri paikoissa, mekaniikaan perusosia lukuunottamatta lähinnä verkkokauppoja.
 
 Piirilevyn tilausprosessin yhteydessä on ehdotuksia niiden hankintapaikoista. Piirilevyn valinta vaikuttaa myös tarvittavaan komponenttilistaan, joka yleensä löytyy piriilevyn suunnittelijan toimesta valmiina, nimellä BOM eli Bill Of Materials. Näissä on monesti suorat copypastettavat linkit johonkin elektroniikkatukkurille, kuten Mouser, Elfa tai Digikey.
 
