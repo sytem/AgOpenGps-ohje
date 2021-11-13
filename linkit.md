@@ -27,6 +27,6 @@ Piirilevyn tilausprosessin yhteydessä on ehdotuksia niiden hankintapaikoista. P
 Näiden valikoimasa ja palvelussa on pieniä eroja, mutta käytännössä jos piirilevyn suunnittelija on jotakin näistä käyttänyt, helpointa on monesti käyttää samaa. Näiden varastot ovat yleensä USA:ssa josta tuotteet tulevat muutamissa päivissä kuriirin kuten DHL tai Fedex kautta. Mouserilta tilatessa he hoitavat tulli-ja veroasiat suoraan, Digikeyllä tämä menee kuriirin kautta.
 
 
-Suoemessa toimivia myyjiä ovat esimerkiksi Partco ja Yleiselektroniikka. Peruskomponentit löytyy heiltä suoraan hyllystä, toki valikoima ei esim kiihtyvyysantureiden tai gps-modulien kanssa ole monta kertaa suurempien kilpailijoidensa kanssa vertailukelpoinen.
+Suoemessa toimivia myyjiä ovat esimerkiksi [Partco](https://www.partco.fi/fi/) ja [Yleiselektroniikka](https://www.yeint.fi/). Peruskomponentit löytyy heiltä suoraan hyllystä, toki valikoima ei esim kiihtyvyysantureiden tai gps-modulien kanssa ole monta kertaa suurempien kilpailijoidensa kanssa vertailukelpoinen.
 
 Tiettyjä palikoita kuten esimerkiksi ohjauksen asentoantureita ei suoraan elektroniikkatukkureilta löydy, vaan näiden yleisin hankinta kanava on Ebay tai Aliexpress. Näiden kanssa joutuu varautumaan huomattavasti pidempiin toimitusaikoihin ja vaihtelevaan valikoimaan
