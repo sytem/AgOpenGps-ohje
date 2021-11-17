@@ -236,3 +236,8 @@ RaspberryPi:n massamuistinaan käyttämä SD-muistikortti ei ole tunnetusti maai
 Yksi vaihtoehto olisi myös tehdä kortista kirjoitussuojattu, ja olla tallentamatta mitään muutoksia suoraan.
 
 TODO
+
+
+## vaihtoehtoinen asennus muunlaiselle tietokoneelle
+
+Koska yleinen komponenttipula vaikeuttaa Rasberry PI:n saatavuutta, on yksi ihan varteenotettava vaihtoehto tukiasemmalle käyttää esim vanhempaa kannettavaa johon asentaa linux ja ohjelmisto erikseen. Tässä on etuna operoinnin helppous kun sen voi tehdä koneella itsellään, mutta toki tämä aiheuttaa myös rajoitteita koneen asennuspaikkaan joka lähtökohtaisesti täytyy olla kuiva sisätila sähköpistokkeella, antenni- tai usb-kaapelin etäisyydellä antennin sijoituspaikasta. Toki vastaanottimen sijoittaminen kauammas tietokoneesta on mahdollista aktiivisen usb-jatkokaapeli avulla, mutta tässäkin on toki omat rajoitteensa esim sähkönsyötön osalta.
