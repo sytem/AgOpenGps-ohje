@@ -22,7 +22,7 @@ Rakentamiseen apuja voi etsiä [Hacklab-yhteisöstä](https://hacklab.fi/) mikä
 
 Järjestelmään tarvitaan hyvä joukko erilaisia [komponenttejä](osat.md) ja näiden hankinta vaatii ostoksia eri paikoissa, mekaniikaan perusosia lukuunottamatta lähinnä verkkokauppoja.
 
-Piirilevyn tilausprosessin yhteydessä on ehdotuksia niiden hankintapaikoista. Piirilevyn valinta vaikuttaa myös tarvittavaan komponenttilistaan, joka yleensä löytyy piriilevyn suunnittelijan toimesta valmiina, nimellä BOM eli Bill Of Materials. Näissä on monesti suorat copypastettavat linkit johonkin elektroniikkatukkurille, kuten Mouser, Elfa tai Digikey.
+Piirilevyn tilausprosessin yhteydessä on ehdotuksia niiden hankintapaikoista. Piirilevyn valinta vaikuttaa myös tarvittavaan komponenttilistaan, joka yleensä löytyy piriilevyn suunnittelijan toimesta valmiina, nimellä BOM eli Bill Of Materials. Näissä on monesti suorat copypastettavat linkit johonkin elektroniikkatukkurille, kuten [Mouser](https://www.mouser.fi/), [Elfa](https://www.elfadistrelec.fi/) tai [Digikey](https://www.digikey.fi/).
 
 Näiden valikoimasa ja palvelussa on pieniä eroja, mutta käytännössä jos piirilevyn suunnittelija on jotakin näistä käyttänyt, helpointa on monesti käyttää samaa. Näiden varastot ovat yleensä USA:ssa josta tuotteet tulevat muutamissa päivissä kuriirin kuten DHL tai Fedex kautta. Mouserilta tilatessa he hoitavat tulli-ja veroasiat suoraan, Digikeyllä tämä menee kuriirin kautta.
 
