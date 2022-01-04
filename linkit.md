@@ -18,6 +18,10 @@ TODO: lisää muiden maiden ryhmiä, saksa yms
 
 Rakentamiseen apuja voi etsiä [Hacklab-yhteisöstä](https://hacklab.fi/) mikäli sellainen omalla paikkakunnalla tai lähistöllä sijaitsee.
 
+## suomenkielisiä projekteja
+
+Oma rakennus"blogini" yhden traktorin automatisoinnista löytyy (konekansa)[https://konekansa.net/]-forumilta:  https://konekansa.net/threads/%C3%84ly%C3%A4-valmettiin.61732/
+
 ## komponenttien hankintapaikat
 
 Järjestelmään tarvitaan hyvä joukko erilaisia [komponenttejä](osat.md) ja näiden hankinta vaatii ostoksia eri paikoissa, mekaniikaan perusosia lukuunottamatta lähinnä verkkokauppoja.
