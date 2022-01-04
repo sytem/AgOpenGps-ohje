@@ -1,5 +1,11 @@
 # traktoriin tuleva laitteisto
 
+Traktorin palikat koostuvat muutamasta selkeästä peruspalikasta:
+
+   * PC
+   * GPS
+   * Elektroniikka-boksi arduinon ympärillä
+   * Ulkoiset anturit
 
 
 ## Gps:n firmware-asetukset
@@ -10,7 +16,15 @@ Traktorissa oleva GPS-moduli tarvitsee mahdollisimman nopean päivityksen ja vai
 
 ## Piirilevyn tilausprosessi
 
-Teoriassa tässä tarvittava arduino-ympäristö olisi mahdollista rakentaa hyppylangoilla suoraan levyltä levylle, mutta luotettavuuden ja selkeyden vuoksi tässä ei olisi mitään järkeä. Varsinkin kun valmiita piirilevy-designeja on saatavissa useita, ja levyjen teettäminen ei nykypäivänä maksa juuri mitään, ei muissa vaihtoehdoissa ole järkeä. Foorumeillä on listattuna monia levyjä joissa on omat hyvät ja huonot puolensa. Kirjoittaja päätyi aikoinaan Suomalaiseen designiin ##todo linkki, kauopoimod vN piirilevyyn. Tilasin levyt kiinalaiselta valmistajalta, levy tai oikeastaan viisi kappaletta levyjä maksoivat muutaman euron, toimitus hiukan enemmän.
+Teoriassa tässä tarvittava arduino-ympäristö olisi mahdollista rakentaa hyppylangoilla suoraan levyltä levylle, mutta luotettavuuden ja selkeyden vuoksi tässä ei olisi mitään järkeä. Varsinkin kun valmiita piirilevy-designeja on saatavissa useita, ja levyjen teettäminen ei nykypäivänä maksa juuri mitään, ei muissa vaihtoehdoissa ole järkeä. Foorumeillä on listattuna monia levyjä joissa on omat hyvät ja huonot puolensa. Kirjoittaja päätyi aikoinaan Suomalaiseen designiin ##todo linkki, kauopoimod vN piirilevyyn. Tilasin levyt kiinalaiselta valmistajalta https://jlcpcb.com/, levy tai oikeastaan viisi kappaletta levyjä maksoivat muutaman euron, toimitus hiukan enemmän mutta kokonaisuutena puhuttiin kympeistä.
+
+Aiemmin, piirilevyjä harrastuskäyttöön on tehnyt myös itse valottamalla ja syövyttämällä, mutta nykypäivänä tehdastekoisten saatavuus on tehnyt DIY-levyistä epäkäytännöllisen vaihtoehdon useimpiin tarkoituksiin.
+
+Toinen monien harrastajien käyttämä piirilevypaja on https://aisler.net/ Hollannissa. Tilaaminen täältä toimii kuten kiinalaistenkin kanssa, ladataan Kicadin tai vastaanvan suuninnitelusoftan tuottama tiedostopaketti, valitaan levyn paksuus ja muut yksityiskohdat sekä toimitus.
+
+Hyvä esimerkki piirilevyn suunnittelusta alusta asti löytyy Jyväskylän Hacklabilta: https://jyvaskyla.hacklab.fi/2022/01/02/esimerkki-elektroniikkasuunnittelusta-tee-se-itse-moottoriohjain/
+
+Toki tässä projektissa suurin osa vaiheista on jo tehty valmiiksi tarjolla olevaksi paketiksi
 
 ## Anturien sijoitus
 

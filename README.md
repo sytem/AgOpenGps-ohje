@@ -36,10 +36,8 @@ Dokumentaatio on tuotettu pääasiassa ohjelmiston versiolle 5 (syksy 2021), mut
 
 * [Komponentit traktorissa](traktori.md)
 	* Gps:n firmware-asetukset
-	* Windows-asetukset
 
 	* Piirilevyn tilausprosessi
-	* Komponenttien hankinta
 
 	* Anturien sijoitus
 	* Akselianturin vivusto
@@ -54,6 +52,7 @@ Dokumentaatio on tuotettu pääasiassa ohjelmiston versiolle 5 (syksy 2021), mut
 
 * [Ohjelmisto ja käyttö](ohjelmisto.md)
 	* Ntrip asetukset
+	* Windows-asetukset
 	* Traktorin mitat
 	* Työkoneen asetukset
 	* Ohjauksen parametrit
