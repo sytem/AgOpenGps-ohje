@@ -244,6 +244,6 @@ TODO
 
 Koska yleinen komponenttipula vaikeuttaa Rasberry PI:n saatavuutta, on yksi ihan varteenotettava vaihtoehto tukiasemmalle käyttää esim vanhempaa kannettavaa johon asentaa linux ja ohjelmisto erikseen. Tässä on etuna operoinnin helppous kun sen voi tehdä koneella itsellään, mutta toki tämä aiheuttaa myös rajoitteita koneen asennuspaikkaan joka lähtökohtaisesti täytyy olla kuiva sisätila sähköpistokkeella, antenni- tai usb-kaapelin etäisyydellä antennin sijoituspaikasta. Toki vastaanottimen sijoittaminen kauammas tietokoneesta on mahdollista aktiivisen usb-jatkokaapeli avulla, mutta tässäkin on toki omat rajoitteensa esim sähkönsyötön osalta.
 
-Myös Windows-pc:n käyttö on mahdollista, ohjelmistona tällöin (Snip)[https://www.use-snip.com/] jonka ilmaisversio riittää tässä tarkoituksessa.
+Myös Windows-pc:n käyttö on mahdollista, ohjelmistona tällöin [Snip](https://www.use-snip.com/) jonka ilmaisversio riittää tässä tarkoituksessa.
 
 Eräs vaihtoehto olisi käyttää myös todella yksinkertaista ESP32-sulautettua tietokonetta, tähän löytyy ohjelmisto https://github.com/nebkat/esp32-xbee 

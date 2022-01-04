@@ -4,7 +4,7 @@
 
 Varsinaista informaatiota sisältävää kotisivua järjestelmällä ei tällähetkellä ole, vaan koodi löytyy [githubista](https://github.com/farmerbriantee/AgOpenGPS). Monesta opensource-projektista poiketen tämän kehittäjät näyttävät käyttävän Githubia lähinnä julkaisualustana, eli koodin työversiot kehitetään paikallisesti ja muutokset pusketaan kerralla julkisuutee. Commit-logeista on siis hiukan vaikea seurata yksittäisiä muutoksia ja niiden kehitystä.
 
-Kansainvälinen, virallinen ja aktiivinen keskustelu löytyy [Discoursesta](https://discourse.agopengps.com/) (huom, urli on päivittynyt 2021 syksyllä ja vanhat linkit eivät enää toimi). Käytännössä tämä on paras paikka löytyää englanninkielistä tietoa niin softaan kuin laitteestoonkin liittyen.
+Kansainvälinen, virallinen ja aktiivinen keskustelu löytyy [Discoursesta](https://discourse.agopengps.com/) (huom, urli on päivittynyt 2021 syksyllä ja vanhat linkit eivät suoraa enää toimi, loppuosa on sama eli vaihtamalla alun uuteen, pääsee eteenpäin). Käytännössä tämä on paras paikka löytyää englanninkielistä tietoa niin softaan kuin laitteestoonkin liittyen.
 
 Keväällä 2021 ohjelman käyttöohje hyppäsi ison hypyn eteenpäin, yksi versio osoitteessa https://github.com/farmerbriantee/AgOpenGPS/blob/master/SourceCode/GPS/Manual.pdf
 Tuorein versio tulee asennuspaketin mukana ja löytyy ( TODO tarkista) ohjelman oman help-linkin kautta.
@@ -20,7 +20,7 @@ Rakentamiseen apuja voi etsiä [Hacklab-yhteisöstä](https://hacklab.fi/) mikä
 
 ## suomenkielisiä projekteja
 
-Oma rakennus"blogini" yhden traktorin automatisoinnista löytyy (konekansa)[https://konekansa.net/]-forumilta:  https://konekansa.net/threads/%C3%84ly%C3%A4-valmettiin.61732/
+Oma rakennus"blogini" yhden traktorin automatisoinnista löytyy [konekansa](https://konekansa.net/)-forumilta:  https://konekansa.net/threads/%C3%84ly%C3%A4-valmettiin.61732/
 
 ## komponenttien hankintapaikat
 
