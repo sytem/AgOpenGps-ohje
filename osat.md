@@ -19,15 +19,32 @@ Syksyllä 2021 yleisen komponenttipulan myötä RaspberryPI-korttitietokoneiden 
 
 PC:n osalta järjestelmä itsessään ei ole kovinkaan vaativa, mutta ympäristö jossa sitä käytetään, aiheuttaa paljonkin vaatimuksia. Normaalia (kannettavaa) tietokonetta kun ei ole suunniteltu kestämään pölyä, tärinää tai lämpötilanvaihteluita, eikä myöskään näytöt ole yleensä suunniteltu riittämään auringonpaisteessa. Yleensä peltotöitä ei kuitenkaan haluta keskeyttää vaikka olisikin hiukan aurinkoisempi päivä...
 
-Tehojen puolesta mikä tahansa Windows 10:ä pyörittävä PC kelpaa. Konetta hankkiessa nykypäivänä toki kannattaa pitää jonkunlaisena minimitasona core-i5 suoritinta neljännestä sukupolvesta ylöspäin (eli siis core i5-4xxx tai suurempi numero) ja 8 gigaa ram-muistia. SSD-tallennusmedia on tärisevässä ympäristössä itsestäänselvä valinta, tämän ei ole tarvetta olla suurempi kuin 128 gigatavua. 
+Tehojen puolesta mikä tahansa Windows 10:ä pyörittävä PC kelpaa. Konetta hankkiessa nykypäivänä toki kannattaa pitää jonkunlaisena minimitasona core-i5 suoritinta neljännestä sukupolvesta ylöspäin (eli siis core i5-4xxx tai suurempi numero) ja 8 gigaa ram-muistia. SSD-tallennusmedia on tärisevässä ympäristössä itsestäänselvä valinta, tämän ei ole tarvetta olla suurempi kuin 128 gigatavua. Käytettävyyden kannalta kosketusnäyttö on melko ehdoton vaatimus
 
 Lisälaitteita varten tarvitaan muutama USB-portti (voi käyttää myös erillistä hubia), ja toki sähkönsyöttö pitää saada järjestettyä traktorin järjestelmästä, eli käytännössä 12v pistokkeesta.
 
 Fyysisesti vahvistettuja koneita saa tämän tehoisena mukavasti käyttettynä, tunnetuin valmistaja on Panasonic ToughBook-sarjallaa. Google-haku "käytetty toughbook" antaakin useita suomalaisia kauppiaita, esim https://laptops.fi/tuote-osasto/kannettavat-tietokoneet/vahvistetut-ja-ajoneuvokoneet
 
+Toinen monen käyttämä ratkaisu on tablettimallinen windows-pc, tässä kosketusnäyttö hoituu itsestään, samoin kuin akkuvarmennus ja kevyemmän laitteen asennus traktorissa on yleensä huomattavasti helpompaa, tablettimallisille koneille on paljon valmiita ratkaisuja saatavissa.
 
-## traktorin elektoriikka
+GPS-korjausdataa varten pc:lle tarvitaan internet-yhteys, tämä voi järjestyä joko pc:n sisäisellä 4G-modeemilla, erillisellä wifi-mokkulalla tai jakamalla netti omasta puhelimesta.
+
+
+## traktorin elektroniikka
 
 * Ardusimple GPS-moduli ja antenni https://www.ardusimple.com/product/simplertk2b-basic-starter-kit-ip65/
+
+* Elektroniikkamoduli
+   * piirilevy
+   * arduino
+   * asento/kiihtyvyys-anturi
+   * moottoriohjain
+   * virransyöttö ja muut oheiskomponentit
+
+* Asentoanturi etuakselille
+* painonappeja ohjaukseen
+
+* moottori ja mekaaninen asennus ratin pyöritykseen
+* TAI: ohjauksen hydrauliventtiilin ohjauskomponentit / Can-väyläohjaus (ei tämän dokumentaation piirissä toistaiseksi)
 
 
