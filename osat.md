@@ -1,6 +1,6 @@
 # Komponentit
 
-Tässä on esimerkkilistaus järjestelmässä tarvittavista fyysisistä komponenteistä. Linkit ovat vain yksi ehdotus ostopaikasta, eikä kirjoittajalla ole mitään sidonnaisuuksia näihin.
+Tässä on esimerkkilistaus järjestelmässä tarvittavista fyysisistä komponenteista. Linkit ovat vain yksi ehdotus ostopaikasta, eikä kirjoittajalla ole mitään sidonnaisuuksia näihin.
 
 ## [RTK-tukiasema RaspberyPI:llä](RTK-GPS.md)
 
@@ -23,7 +23,7 @@ Tehojen puolesta mikä tahansa Windows 10:ä pyörittävä PC kelpaa. Konetta ha
 
 Lisälaitteita varten tarvitaan muutama USB-portti (voi käyttää myös erillistä hubia), ja toki sähkönsyöttö pitää saada järjestettyä traktorin järjestelmästä, eli käytännössä 12v pistokkeesta.
 
-Fyysisesti vahvistettuja koneita saa tämän tehoisena mukavasti käyttettynä, tunnetuin valmistaja on Panasonic ToughBook-sarjallaa. Google-haku "käytetty toughbook" antaakin useita suomalaisia kauppiaita, esim https://laptops.fi/tuote-osasto/kannettavat-tietokoneet/vahvistetut-ja-ajoneuvokoneet
+Fyysisesti vahvistettuja koneita saa tämän tehoisena mukavasti käyttettynä, tunnetuin valmistaja on Panasonic ToughBook-sarjallaan. Google-haku "käytetty toughbook" antaakin useita suomalaisia kauppiaita, esim https://laptops.fi/tuote-osasto/kannettavat-tietokoneet/vahvistetut-ja-ajoneuvokoneet
 
 Toinen monen käyttämä ratkaisu on tablettimallinen windows-pc, tässä kosketusnäyttö hoituu itsestään, samoin kuin akkuvarmennus ja kevyemmän laitteen asennus traktorissa on yleensä huomattavasti helpompaa, tablettimallisille koneille on paljon valmiita ratkaisuja saatavissa.
 
