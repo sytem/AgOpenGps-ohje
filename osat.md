@@ -35,11 +35,12 @@ GPS-korjausdataa varten pc:lle tarvitaan internet-yhteys, tämä voi järjestyä
 * Ardusimple GPS-moduli ja antenni https://www.ardusimple.com/product/simplertk2b-basic-starter-kit-ip65/
 
 * Elektroniikkamoduli
-   * piirilevy
+   * piirilevy, dokumentaatio: https://discourse.agopengps.com/t/kaupoimod-pcb-v4/3920
    * arduino
    * asento/kiihtyvyys-anturi
    * moottoriohjain
    * virransyöttö ja muut oheiskomponentit
+   * sopiva kotelo, kaapelointi, liittimet
 
 * Asentoanturi etuakselille
 * painonappeja ohjaukseen

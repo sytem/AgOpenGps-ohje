@@ -10,7 +10,11 @@ Traktorin palikat koostuvat muutamasta selkeästä peruspalikasta:
 
 ## Gps:n firmware-asetukset
 
-Traktorissa oleva GPS-moduli tarvitsee mahdollisimman nopean päivityksen ja vain tiettyjä viestityyppejä. Vastaavasti kuten tukiaseman kanssa on tarve tehdä, moduli tarvii asetukset. Hyväksi havaittu asetustiedosto Ardusimple FP9-vastaanottimelle löytyy osoitteesta <TODO>
+Traktorissa oleva GPS-moduli tarvitsee mahdollisimman nopean päivityksen ja vain tiettyjä viestityyppejä. Vastaavasti kuten tukiaseman kanssa on tarve tehdä, moduli tarvii asetukset. Hyväksi havaittu asetustiedosto Ardusimple FP9-vastaanottimelle löytyy osoitteesta https://discourse.agopengps.com/t/improved-konfiguration-files-for-f9p-with-firmware-1-13/2923
+
+päivitysohje osoitteessa: https://discourse.agopengps.com/t/ublox-f9p-config-for-rover/308
+
+
 
 
 
@@ -48,7 +52,7 @@ GPS-antennin kaapeli on kiinteällä liittimellä, eikä kaapelia ole syytä sig
 
 Helpoin tapa saada traktori ohjautumaan autonmaation pohjalta, on laittaa kone pyörittämään rattia. Tähän näkee kahta päätyyliä, toinen on pyörittää itse rattia esim rc-auton renkaalla suoraan. Toinen vaihtoehto on rakentaa rattiakselin ympärille erillinen kiekko tai ratas jota sitten moottorilla pyöritetään. Moottorista ja ohjaimesta riippuen ratin käsikäyttö voi vaatia joko moottorin irroituksen fyysisestä kontaktista tai sähköstä.
 
-Perus-ohjeen mukainen Cytron-moottoriohjain virtaa saadessaan yrittää pitää moottorin paikoillaan jos ohjaus ei sitä johonkin suuntaan käännä. Tähän on olemassa modaus jolla moottori vapautuu kun softasta automaattiohjaus kytketään pois päältä ## todo linkki forumipostaukseen
+Perus-ohjeen mukainen Cytron-moottoriohjain virtaa saadessaan yrittää pitää moottorin paikoillaan jos ohjaus ei sitä johonkin suuntaan käännä. Tähän on olemassa modaus jolla moottori vapautuu kun softasta automaattiohjaus kytketään pois päältä https://discourse.agopengps.com/t/motor-wiring-to-prevent-back-feed-cytron/4925/11
 
 ## Liittimet
 
