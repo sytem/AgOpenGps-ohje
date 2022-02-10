@@ -14,10 +14,9 @@ Kukin paikannusjärjestelmä on perusperiaatteeltaan kovin samantyyppinen, Maata
 Differentiaali-GPS, DGPS perustuu tunnetussa sijainnissa olevan tukiaseman vastaanottamaan paikkatietoon, ja reaaliajassa tehtävään vertailuun lasketun ja tunnetun sijainnin erotukseen. Tämä erotus lähetetään liikkuville vastaanottimille muodossa "sain juuri nyt sijaintini eroksi 6m lähteen ja 3m etelään, korjaa omaa gnss-signaalista laskemaasi paikkaa vastaavasti. Eli siis voidaan olettaa virheen olevan samansuuntainen ja -suuruinen myös liikkuvan vastaanottimen kohdalla
 
 
-### todo:
+### täydennettäviä asioita:
 * virhelähteet
 * rtk
-* gps-linkki suomi-wikipedia
 * kaupalliset korjaus-signaalit
 * kiihtyvyysanturit
 * https://www.use-snip.com/kb/knowledge-base/question-what-is-an-ntrip/
