@@ -38,9 +38,7 @@ Dokumentaatio on tuotettu pääasiassa ohjelmiston versiolle 5 (syksy 2021), mut
 
 * [Komponentit traktorissa](traktori.md)
 	* Gps:n firmware-asetukset
-
 	* Piirilevyn tilausprosessi
-
 	* Anturien sijoitus
 	* Akselianturin vivusto
 	* Gps-antennin paikka
@@ -49,7 +47,6 @@ Dokumentaatio on tuotettu pääasiassa ohjelmiston versiolle 5 (syksy 2021), mut
 	* Asennusjärjestys
 	* Arduinon ohjelmointi
 	* Testausvaiheet
-
 	* Traktorin omat anturit, canbus, hydrauliikka
 
 * [Ohjelmisto ja käyttö](ohjelmisto.md)
